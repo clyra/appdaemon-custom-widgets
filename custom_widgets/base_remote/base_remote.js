@@ -54,15 +54,17 @@ function base_remote(widget_id, url, skin, parameters)
         if (self.state == self.parameters.state_active)
         {
             args = self.parameters.post_service_inactive
+            if ( "command" in self.parameters )
+            { 
+               var newargs = {};
+               newargs["command"] = self.parameters.command;
+	       args["json_args"] =  JSON.stringify(newargs);
+            }  
         }
         else
         {
             args = self.parameters.post_service_active;
         }
-            var newargs = {};
-             newargs["command"] = self.parameters.command;
-	     args["json_args"] =  JSON.stringify(newargs);
-	console.log(args);    
         self.call_service(self, args);
         toggle(self);
         if ("momentary" in self.parameters)
