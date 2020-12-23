@@ -1,0 +1,101 @@
+ht_power:
+   widget_type: remote
+   title: HT Power
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_power
+   icon_on: mdi-power
+   icon_off: mdi-power
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: blue"
+
+ht_bd:
+   widget_type: remote
+   title: Input Macmini
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_bd
+   icon_on: mdi-desktop-mac
+   icon_off: mdi-desktop-mac
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: blue"
+
+
+ht_tv:
+   widget_type: remote
+   title: Input Cable Tv
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_tv
+   icon_on: mdi-television-box
+   icon_off: mdi-television-box
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: blue"
+
+ht_cd:
+   widget_type: remote
+   title: Input Wii
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_cd
+   icon_on: mdi-wii
+   icon_off: mdi-wii
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: blue"
+
+ht_radio:
+   widget_type: remote
+   title: Input ATV
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_radio
+   icon_on: mdi-apple
+   icon_off: mdi-apple
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: blue"
+
+ht_volup:
+   widget_type: remote
+   title: Vol up
+   entity: remote.living_room_remote
+   json_args:
+     command:
+       - ht_volup
+   icon_on: mdi-volume-plus
+   icon_off: mdi-volume-plus
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: red"
+
+ht_voldown:
+   widget_type: remote
+   title: Vol down
+   entity: remote.living_room_remote
+   json_args:
+     command:
+       - ht_voldown
+   icon_on: mdi-volume-minus
+   icon_off: mdi-volume-minus
+   icon_style_inactive: "color: white"
+   icon_style_active: "color: red"
+
+ht_mute:
+   widget_type: remote
+   title: Vol mute
+   entity: remote.living_room_remote
+   json_args:
+     device: 32756745
+     command:
+       - ht_mute
+   icon_on: mdi-volume-mute
+   icon_off: mdi-volume-mute
+

@@ -54,11 +54,9 @@ function base_remote(widget_id, url, skin, parameters)
         if (self.state == self.parameters.state_active)
         {
             args = self.parameters.post_service_inactive
-            if ( "command" in self.parameters )
+            if ( "json_args" in self.parameters )
             { 
-               var newargs = {};
-               newargs["command"] = self.parameters.command;
-	       args["json_args"] =  JSON.stringify(newargs);
+	       args["json_args"] =  JSON.stringify(self.parameters.json_args);
             }  
         }
         else

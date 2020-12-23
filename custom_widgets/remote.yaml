@@ -1,19 +1,19 @@
 widget_type: base_remote
-entity: {{entity}}
+entity: "{{entity}}"
 state_inactive: "off"
 state_active: "on"
 enable: 1
-momentary: 1000
+momentary: 400
 ignore_state: 1
 post_service_active:
     service: remote/send_command
-    entity_id: {{entity}}
+    entity_id: "{{entity}}"
 post_service_inactive:
     service: remote/send_command
-    entity_id: {{entity}}
+    entity_id: "{{entity}}"
 fields:
-    title: {{title}}
-    title2: {{title2}}
+    title: "{{title}}"
+    title2: "{{title2}}"
     icon: ""
     icon_style: ""
     state_text: ""
