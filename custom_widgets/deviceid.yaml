@@ -2,6 +2,7 @@ widget_type: basedeviceid
 fields:
   title: "{{title}}"
   title2: "{{title2}}"
+  value: "{{id}}"
   unit: ""
   state_text: ""
 static_css:
