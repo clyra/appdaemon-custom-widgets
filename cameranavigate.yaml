@@ -1,0 +1,13 @@
+widget_type: basecameranavigate
+fields:
+  title: "{{title}}"
+  frame_src: ""
+  img_src: ""
+  clickurl: ""
+  frame_style: '{{frame_style}}'
+icons: []
+static_css:
+  title_style: $camera_title_style
+  widget_style: $camera_widget_style
+css: []
+static_icons: []
